@@ -11,43 +11,95 @@
 </head>
 
 <body>
-    <section class="container mx-auto">
-        <header>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Home</a></li>
-                            <li><a>Service</a></li>
-                            <li><a>Pacage</a></li>
-                            <li><a>About</a></li>
-                            <li><a>Blog</a></li>
-                            <li><a>Contact</a></li>
-                        </ul>
+    <!-- Header area start -->
+    <header class="container mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
                     </div>
-                    <a class="btn btn-ghost text-xl">BD MATRIMONY</a>
-                </div>
-                <div class="navbar-end hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         <li><a>Home</a></li>
                         <li><a>Service</a></li>
-                        <li><a>Package</a></li>
+                        <li><a>Pacage</a></li>
                         <li><a>About</a></li>
                         <li><a>Blog</a></li>
                         <li><a>Contact</a></li>
+                        <li><a>Login</a></li>
                     </ul>
                 </div>
+                <a class="btn btn-ghost text-xl">BD MATRIMONY</a>
             </div>
-        </header>
-    </section>
+            <div class="navbar-end hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 font-semibold">
+                    <li><a>Home</a></li>
+                    <li><a>Service</a></li>
+                    <li><a>Package</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                    <li><a>Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Header area End -->
+    <!-- Main area start -->
+    <main>
+        <!-- Banner section start -->
+        <div class="hero min-h-screen"
+            style="background-image: url(https://content.jdmagicbox.com/comp/bangalore/r5/080pxx80.xx80.190131183857.l2r5/catalogue/shaadi-proposal-vishwavidyalaya-bangalore-matrimonial-bureaus-9tzh00krd8.jpg?clr=)">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-2xl">
+                    <h1 class="mb-5 text-5xl font-bold">DIGITAL MARRIAGE MEDIA FOR BANGLADESH</h1>
+                    <p class="mb-5">Please Check Your Age for matrimony</p>
+                    <input id="ageValue" type="number" placeholder="Type your age" class="input input-bordered w-full max-w-xs" />
+                    <button id="checkAge" class="btn btn-primary">Check</button>
+                    <p id="validInput" class="text-yellow-500 mt-5 text-xl hidden"> Please Provide a valid input</p>
+                </div>
+            </div>
+        </div>
+        <!-- Banner section End -->
+        <!-- Modal section start -->
+        <!-- onclick="my_modal_5.showModal()" -->
+        <!-- Modal 1 -->
+        <dialog id="modalOne" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+                <h3 class="font-bold text-lg">Congratulation</h3>
+                <p class="py-4">You are adult. Please Register our website and enjoy our premium Pacage</p>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
+        <!-- Modal 2 -->
+        <dialog id="modalTwo" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+                <h3 class="font-bold text-lg">Opps!</h3>
+                <p class="py-4">You are children. You are not of marriageable age</p>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
+        <!-- Modal section end -->
+
+    </main>
+    <!-- Main Area End -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
