@@ -60,15 +60,56 @@
                 <div class="max-w-2xl">
                     <h1 class="mb-5 text-5xl font-bold">DIGITAL MARRIAGE MEDIA FOR BANGLADESH</h1>
                     <p class="mb-5">Please Check Your Age for matrimony</p>
-                    <input id="ageValue" type="number" placeholder="Type your age" class="input input-bordered w-full max-w-xs" />
+                    <input id="ageValue" type="number" placeholder="Type your age"
+                        class="input input-bordered w-full max-w-xs text-zinc-950" />
                     <button id="checkAge" class="btn btn-primary">Check</button>
-                    <p id="validInput" class="text-yellow-500 mt-5 text-xl hidden"> Please Provide a valid input</p>
                 </div>
             </div>
         </div>
         <!-- Banner section End -->
+        <!-- Card Section start -->
+        <div class="container mx-auto mt-5">
+            <h2 class="text-5xl text-center"><span class="text-red-800">How bdmatrimony</span> works</h2>
+            <p class="text-center text-2xl">Get started in bdmatrimony.com in 3 easy steps</p>
+            <!-- Card start-->
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 my-5 gap-5 justify-center">
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="img/Create-profile.png" alt="Shoes"
+                            class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Create Your Profile</h2>
+                        <p>Create your detail profile, add photos and describe your partner preference</p>
+                    </div>
+                </div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="img/Search-partner.png" alt="Shoes"
+                            class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Search Your Partner</h2>
+                        <p>Search your preferred partner by location, education, interest and so on</p>
+                    </div>
+                </div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="img/communication.png" alt="Shoes"
+                            class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Start Communication</h2>
+                        <p>Start communication with suitable profiles by sending message & emails</p>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Card end-->
+
+        </div>
+        <!-- Card Section End -->
         <!-- Modal section start -->
-        <!-- onclick="my_modal_5.showModal()" -->
         <!-- Modal 1 -->
         <dialog id="modalOne" class="modal modal-bottom sm:modal-middle">
             <div class="modal-box">
@@ -86,7 +127,20 @@
         <dialog id="modalTwo" class="modal modal-bottom sm:modal-middle">
             <div class="modal-box">
                 <h3 class="font-bold text-lg">Opps!</h3>
-                <p class="py-4">You are children. You are not of marriageable age</p>
+                <p class="py-4">You are children. You are not fit for marriage</p>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
+        <!-- Modal-3 for valid input -->
+        <dialog id="validInput" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+                <h3 class="font-bold text-lg text-center mt-5 text-red-500">Please Provide a valid Input</h3>
+
                 <div class="modal-action">
                     <form method="dialog">
                         <!-- if there is a button in form, it will close the modal -->
